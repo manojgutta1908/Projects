@@ -23,7 +23,7 @@ SmartLoan is a structured SQL project that transforms a raw, redundant loan data
 
 This is the flat structure of the dataset before normalization:
 
-![Original Schema]![Loans](https://github.com/user-attachments/assets/33b0a6f7-f987-4180-b999-1380588c257c)
+![Loans](https://github.com/user-attachments/assets/33b0a6f7-f987-4180-b999-1380588c257c)
 
 
 ---
@@ -32,7 +32,7 @@ This is the flat structure of the dataset before normalization:
 
 The dataset was normalized into multiple relational tables to reduce redundancy, improve reliability, and enhance performance. Here's the final ER diagram:
 
-![Normalized ERD]![Normalised](https://github.com/user-attachments/assets/fe9efeb8-65a3-4d79-886c-a2a92d4e2957)
+![Normalised](https://github.com/user-attachments/assets/fe9efeb8-65a3-4d79-886c-a2a92d4e2957)
 
 
 ### Main Tables
