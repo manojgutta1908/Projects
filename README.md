@@ -1,6 +1,6 @@
-# 💼 SmartLoan: SQL-Driven Insights into Loan Performance and Customer Behavior
+# SmartLoan: SQL-Driven Insights into Loan Performance and Customer Behavior
 
-## 📌 Project Overview
+## Project Overview
 
 SmartLoan is a structured SQL project that transforms a raw, redundant loan dataset into a fully normalized relational database. It optimizes performance using indexing and enables rich analytical insights into loan trends, customer behavior, and repayment patterns.
 
@@ -19,7 +19,7 @@ SmartLoan is a structured SQL project that transforms a raw, redundant loan data
   - Repayment history
   - Target feature: `Default` (optional use for ML classification)
 
-### 📊 Original Dataset Schema
+### Original Dataset Schema
 
 This is the flat structure of the dataset before normalization:
 
@@ -28,14 +28,14 @@ This is the flat structure of the dataset before normalization:
 
 ---
 
-## 🧱 Normalized Database Schema
+## Normalized Database Schema
 
 The dataset was normalized into multiple relational tables to reduce redundancy, improve reliability, and enhance performance. Here's the final ER diagram:
 
 ![Normalized ERD]![Normalised](https://github.com/user-attachments/assets/fe9efeb8-65a3-4d79-886c-a2a92d4e2957)
 
 
-### ✅ Main Tables
+### Main Tables
 
 - `Customers`: Demographics and client information
 - `Client_Income`: Income, work status, and employment
@@ -44,28 +44,28 @@ The dataset was normalized into multiple relational tables to reduce redundancy,
 - `CreditScores`: Score sources from credit bureaus
 - `Payments`: Repayment data
 
-### 🔁 Lookup Tables
+### Lookup Tables
 
 - `Education`, `Marital_Status`, `Income_Type`, `Occupation`, `Organization_Type`, `House_Type`, `Loan_Contract`, `Accompany`
 
 ---
 
-## 🛠️ SQL Features
+##  SQL Features
 
-### 🧮 Schema Scripts
+### Schema Scripts
 - Full `CREATE TABLE` statements with primary and foreign key constraints
 - Proper indexing on non-PK fields for performance
 
-### 📥 ETL (Insert Logic)
+### ETL (Insert Logic)
 - SQL-based `INSERT INTO ... SELECT ... JOIN` transformations from the raw `Loans` table
 - Data validation via `IS NOT NULL` filters
 
-### 📈 Analytical Queries
+### Analytical Queries
 - Outstanding balance calculation
 - Repayment trends across income types
 - Customer ranking by loan amount
 - Running totals using window functions
 
-### 🧠 Stored Procedures
+### Stored Procedures
 ```sql
 EXEC Loan_Summary @Credit_Amount = 100000, @Loan_Contract_Type = 'CL';
